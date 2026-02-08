@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Demostración de Salida en Javascript</title>
+</head>
+<body>
+    <h1>Demostración de salida en Javascript</h1>
+    
+    <button onclick="mostrarAlerta()">Mostrar alerta con mi nombre</button>
+    
+    <p id="parrafo"></p>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <script>
+        // Mensaje que se imprime en la consola cuando se carga la página
+        console.log("La página ha sido cargada exitosamente");
+
+        function mostrarAlerta() {
+            alert("Mi nombre es Jorge López");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("parrafo").textContent = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</body>
+</html>
